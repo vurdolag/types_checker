@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from setuptools import setup
+from setuptools import setup, find_packages
 
 """
 :authors: vurdolag
@@ -43,5 +43,7 @@ setup(
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Programming Language :: Python :: Implementation :: CPython',
-    ]
+    ],
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
 )
