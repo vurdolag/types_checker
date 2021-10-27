@@ -14,7 +14,7 @@ with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='py-func-type-checker',
+    name='types_checker',
     version=version,
 
     author='vurdolag',
@@ -44,6 +44,8 @@ setup(
         'Programming Language :: Python :: Implementation :: PyPy',
         'Programming Language :: Python :: Implementation :: CPython',
     ],
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
+    packages=find_packages(),
+    keywords=[
+        'function', 'runtime', 'types', 'checker', 'strong types'
+    ],
 )
